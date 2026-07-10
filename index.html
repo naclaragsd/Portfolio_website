@@ -1,372 +1,521 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome: biblioteca de ícones pronta -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Fontes texto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Clara | Software Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-        </nav>
-        <div class="line"></div>
-    </header>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">AC</span>
+        <span>Ana Clara</span>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#timeline">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="home" class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="kicker">Open to Software Engineering Internship</span>
+        <h1><span class="outline">Where ideas</span> become <span class="gradient-text">software.</span></h1>
+        <p class="lead">
+          Sou estudante de Engenharia de Software e construo projetos que unem interface, lógica, documentação e evolução por etapas.
+          Busco uma oportunidade de estágio para aprender com times reais e contribuir no desenvolvimento de software.
+        </p>
+        <div class="hero-signal" aria-label="Destaques técnicos">
+          <span class="signal-chip">software engineering</span>
+          <span class="signal-chip">software development</span>
+          <span class="signal-chip">documentation</span>
+          <span class="signal-chip">AI/RAG studies</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">Ver projetos</a>
+          <!-- TODO: adicionar o arquivo real do currículo neste caminho. -->
+          <a class="btn" href="CurrículoAnaClara.pdf" download>Baixar currículo</a>
+          <a class="btn" href="https://github.com/naclaragsd">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/anaclaragsd">LinkedIn</a>
+        </div>
+      </div>
 
-<main class="container">
-    <section id="home">
-            <div class="home-content">
-                <div class="text-content">
-                    <div class="hero-text hidden">
-
-                    <h1>Hi i'm <span>Ana Clara</span></h1>
-
-                    <h3>Software Engineering Student</h3>
-
-                    <p>Passionate about technology, software development, and artificial intelligence. 
-Everything in this field fascinates me, the more I learn, the more I want to explore.
-                    </p>
-
-
-                    <div class="location">
-                        <a href="https://www.google.com/maps/place/Cianorte,+PR/" target="_blank">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>Cianorte, PR • Brazil</span>
-                        </a>
-                    </div>
-
-                    <div class="buttons">
-                        <a href="CurrículoAnaClara.pdf" download class="cv-btn">
-                            Download CV
-                        </a>
-                    </div>
-
-                    <div class="socials">
-
-                        <p>follow me... </p>
-
-                        <a href="https://github.com/naclaragsd" target="_blank">
-                             <i class="fa-brands fa-github"></i>
-                        </a>
-
-                        <a href="https://linkedin.com/in/anaclaragsd" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-
-                        <a href="mailto:aninhaandrade888@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-
-                    </div>
-                </div>
-</div>
-                <div class="img-content">
-                 <img src="img/icon.png" alt="Ana Clara"/>
-                </div>
+      <aside class="system-card" aria-label="Painel de perfil">
+        <div class="window-bar">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="profile-system">
+          <div class="avatar-row">
+            <div class="avatar-frame">
+              <img src="img/icon.png" alt="Ana Clara">
             </div>
-            
+            <div>
+              <span class="level">Software Engineering · 4th semester</span>
+              <h2>Ana Clara</h2>
+              <p>Desenvolvimento de software, lógica, documentação, dados e IA aplicada a estudos.</p>
+            </div>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>7</strong>
+              <span>repositórios públicos</span>
+            </div>
+            <div class="stat">
+              <strong>4</strong>
+              <span>projetos destaque</span>
+            </div>
+            <div class="stat">
+              <strong>6</strong>
+              <span>certificados</span>
+            </div>
+            <div class="stat">
+              <strong>AI</strong>
+              <span>AI research project</span>
+            </div>
+          </div>
+          <span class="system-orbit" aria-hidden="true"></span>
+        </div>
+      </aside>
     </section>
 
-   <section id="about">
+    <section id="about" class="section">
+      <div class="section-heading">
+        <div>
+          <h2>About Me</h2>
+          <p>Minha trajetória como estudante de Engenharia de Software, meus estudos atuais e a forma como desenvolvo projetos com lógica, documentação e evolução por etapas.</p>
+        </div>
+      </div>
 
-    <div class="about-section">
-
-        <div class="section-title hidden">
-            <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="panel">
+          <h3>Eu gosto de construir com intenção.</h3>
+          <p>
+            Estou cursando Engenharia de Software e busco minha primeira oportunidade de estágio em tecnologia.
+            Tenho estudado JavaScript, C, estruturas de dados, documentação de software e conceitos de IA aplicada a estudos.
+          </p>
+          <p>
+            Meus projetos não são apenas telas: eu procuro entender o problema, definir requisitos,
+            documentar decisões, implementar funcionalidades e evoluir cada versão com organização.
+          </p>
         </div>
 
-        <div class="about-wrapper hidden">
-
-            <div class="about-content">
-
-                <p>
-                Currently pursuing a Software Engineering degree (3rd semester)
-                at UniCesumar University in Maringá, attending on-campus classes,
-                and participating in a scientific initiation project focused on
-                Intelligent Automation of Systematic Reviews using AI, RAG and
-                Google Workspace.
-                </p>
-
-                <p>
-                Seeking internship opportunities in the technology field while
-                continuously improving my knowledge through studies, courses,
-                workshops and tech events.
-                </p>
-
-                <p>
-                Passionate about software development and artificial intelligence,
-                I enjoy learning new technologies, building projects and constantly
-                challenging myself to grow as a future software engineer.
-                </p>
-
-            </div>
-
-            <div class="about-img">
-
-                <img src="img/meIconn.png" alt="Ana Clara">
-
-            </div>
-
+        <div class="panel">
+          <h3>Developer console</h3>
+          <div class="mini-terminal">
+            &gt; current_focus: <span>software development + software engineering</span><br>
+            &gt; studying: <span>JavaScript, C, data structures, AI/RAG, Python, Power BI</span><br>
+            &gt; looking_for: <span>software development internship</span><br>
+            &gt; location: <span>Cianorte/PR, Maringá/PR or remote</span><br>
+            &gt; signature: <span>organized, curious, detail-oriented</span>
+          </div>
         </div>
-
-    </div>
-
-</section>
-
-
-    <section id="projects">
-
-        <div class="projects-section">
-
-        <div class="section-title hidden">
-            <h2>Projects</h2>
-            <p>Repositories and studies I've been working on.</p>
-        </div>
-
-        <div class="projects-grid">
-
-            <!-- Projeto 1 -->
-            <div class="project-card hidden">
-
-                <div class="project-content">
-
-                    <h3>Front-End Studies</h3>
-
-                    <p>
-                        Repository focused on front-end development studies,
-                        responsive layouts, HTML structure, CSS styling and
-                        JavaScript exercises.
-                    </p>
-
-                    <div class="techs">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <a href="https://github.com/naclaragsd/FrontEnd_2026"
-                       target="_blank"
-                       class="project-btn">
-
-                       <i class="fa-brands fa-github"></i>
-                       View Repository
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Projeto 2 -->
-            <div class="project-card hidden">
-
-                <div class="project-content">
-
-                    <h3>Data Structures in C</h3>
-
-                    <p>
-                        Academic repository containing exercises and logic
-                        implementations focused on programming fundamentals
-                        and problem solving using C language.
-                    </p>
-
-                    <div class="techs">
-                        <span>C</span>
-                        <span>Algorithms</span>
-                        <span>Data Structures</span>
-                    </div>
-
-                    <a href="https://github.com/naclaragsd/EstruturaDeDados_2026"
-                       target="_blank"
-                       class="project-btn">
-
-                       <i class="fa-brands fa-github"></i>
-                       View Repository
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+      </div>
     </section>
 
-
-    <section id="certificates">
-
-        <div class="certificates-section">
-
-        <div class="section-title hidden">
-            <h2>Certificates</h2>
-            <p>Courses, workshops and technology events.</p>
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <h2>Skills & Technologies</h2>
+          <p>Separado por contexto para ficar mais fácil de bater o olho.</p>
         </div>
+      </div>
 
-        <div class="certificates-wrapper">
-
-            <!-- LEFT SIDE -->
-            <div class="certificate-category hidden">
-
-                <h3 class="category-title">
-                    Events & Workshops
-                </h3>
-
-                <div class="certificates-grid">
-
-                    <!-- Hackathon -->
-                    <div class="certificate-card">
-
-                        <img src="certificados/certificadoHackathon.png">
-
-                        <div class="certificate-info">
-
-                            <h3>Hackathon UniCesumar</h3>
-
-                            <p>
-                                Participation in Hackathon UniCesumar 2025.
-                            </p>
-
-                            <span>20h • 2025</span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- WorkinTech -->
-                    <div class="certificate-card">
-
-                        <img src="certificados/certificadoGerenciamentoDeProjetos.png">
-
-                        <div class="certificate-info">
-
-                            <h3>Project Management</h3>
-
-                            <p>
-                                Workshop focused on technology and projects.
-                            </p>
-
-                            <span>8h • 2025</span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- WorkinTech -->
-                    <div class="certificate-card">
-
-                        <img src="certificados/certificadoRegrasEModelosDeNegocio.png">
-
-                        <div class="certificate-info">
-
-                            <h3>Rules And Business Models</h3>
-
-                            <p>
-                                Workshop focused on technology and projects.
-                            </p>
-
-                            <span>8h • 2025</span>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-            <!-- RIGHT SIDE -->
-            <div class="certificate-category hidden">
-
-                <h3 class="category-title">
-                    Courses
-                </h3>
-
-                <div class="certificates-grid">
-
-                    <!-- HTML -->
-                    <div class="certificate-card">
-
-                        <img src="certificados/certificadoHTML.png">
-
-                        <div class="certificate-info">
-
-                            <h3>HTML Fundamentals</h3>
-
-                            <p>
-                                Responsive web structure using semantic HTML.
-                            </p>
-
-                            <span>OneBitCode</span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- CSS -->
-                    <div class="certificate-card">
-
-                        <img src="certificados/certificadoCSS.png">
-
-                        <div class="certificate-info">
-
-                            <h3>CSS Fundamentals</h3>
-
-                            <p>
-                                Styling, layouts and responsive design.
-                            </p>
-
-                            <span>OneBitCode</span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- JavaScript -->
-                    <div class="certificate-card">
-
-                        <img src="certificados/certificadoJS.png">
-
-                        <div class="certificate-info">
-
-                            <h3>JavaScript Fundamentals</h3>
-
-                            <p>
-                                Logic and programming fundamentals using JavaScript.
-                            </p>
-
-                            <span>OneBitCode</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>Front-end</h3>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">DOM</span>
+          </div>
         </div>
-
-    </div>
+        <div class="skill-card">
+          <h3>Software Engineering</h3>
+          <div class="chips">
+            <span class="chip">Requirements</span>
+            <span class="chip">Use Cases</span>
+            <span class="chip">Business Rules</span>
+            <span class="chip">Documentation</span>
+            <span class="chip">Git/GitHub</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Programming & Studies</h3>
+          <div class="chips">
+            <span class="chip">C</span>
+            <span class="chip">Data Structures</span>
+            <span class="chip">Algorithms</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Python</span>
+            <span class="chip">Power BI</span>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <div>
+          <h2>My Projects</h2>
+          <p>Projetos como cards visuais, mas com texto de estudo de caso para recrutador entender valor técnico.</p>
+        </div>
+      </div>
 
-</main>
-    <script src="script.js"></script>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-art">
+            <span class="pixel-badge">MAIN QUEST</span>
+            <span class="chip">Software Engineering</span>
+          </div>
+          <div class="project-body">
+            <h3>Lenadi</h3>
+            <p>
+              <strong>Status:</strong> In development · <strong>Type:</strong> Study management platform ·
+              <strong>Stack:</strong> HTML, CSS, JavaScript, LocalStorage
+            </p>
+            <p>
+              Plataforma de gerenciamento de estudos desenvolvida com HTML, CSS e JavaScript, focada em CRUD de disciplinas
+              e tarefas, persistência com LocalStorage, filtros, cálculo de progresso e documentação de requisitos,
+              regras de negócio e casos de uso.
+            </p>
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">LocalStorage</span>
+              <span class="chip">CRUD</span>
+              <span class="chip">Use Cases</span>
+              <span class="chip">Documentation</span>
+            </div>
+            <div class="project-links">
+              <a class="tiny-link" href="https://github.com/naclaragsd/lenadi">GitHub</a>
+              <!-- TODO: substituir pelo link da demo publicada quando estiver disponível. -->
+              <a class="tiny-link" href="#">Live Demo</a>
+              <!-- TODO: substituir pelo link da documentação do Lenadi quando estiver publicada. -->
+              <a class="tiny-link" href="#">Docs</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art">
+            <span class="pixel-badge">WEB APP</span>
+          </div>
+          <div class="project-body">
+            <h3>Portal do Cidadão</h3>
+            <p>
+              Aplicação acadêmica voltada à participação cidadã, com cadastro de propostas, comentários, curtidas,
+              filtros e validações. Projeto focado em lógica de interface, manipulação de dados e organização de funcionalidades.
+            </p>
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">Filters</span>
+              <span class="chip">Validation</span>
+              <span class="chip">OOP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art">
+            <span class="pixel-badge">UI</span>
+          </div>
+          <div class="project-body">
+            <h3>House Service</h3>
+            <p>
+              Landing page responsiva para um serviço de conexão entre clientes e profissionais domésticos,
+              com foco em estrutura visual, experiência do usuário, responsividade e apresentação comercial.
+            </p>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <!-- TODO: substituir pelo link da demo publicada quando estiver disponível. -->
+              <a class="tiny-link" href="#">Live Demo</a>
+              <a class="tiny-link" href="https://github.com/naclaragsd/houseService">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art">
+            <span class="pixel-badge">C</span>
+          </div>
+          <div class="project-body">
+            <h3>Estrutura de Dados</h3>
+            <p>
+              Exercícios e implementações em C para praticar lógica, ponteiros, structs, memória dinâmica,
+              pilhas, filas e listas encadeadas.
+            </p>
+            <div class="chips">
+              <span class="chip">C</span>
+              <span class="chip">Algorithms</span>
+              <span class="chip">Data Structures</span>
+              <span class="chip">Pointers</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art">
+            <span class="pixel-badge">PORTFOLIO</span>
+          </div>
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p>
+              Portfólio pessoal desenvolvido para apresentar projetos, certificados, trajetória acadêmica e formas de contato,
+              com foco em identidade visual, responsividade e organização de conteúdo.
+            </p>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">GitHub Pages</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="section-heading">
+        <div>
+          <h2>Certificates</h2>
+          <p>Certificados principais que reforçam minha evolução em programação, dados, IA, eventos acadêmicos e fundamentos de Engenharia de Software.</p>
+        </div>
+      </div>
+
+      <div class="certificate-grid">
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/python-bradesco.png" alt="Certificado Python Básico">
+          </div>
+          <div class="certificate-content">
+            <h3>Python Básico</h3>
+            <p>Base de programação com Python, reforçando lógica, sintaxe, estruturas básicas e resolução de problemas.</p>
+            <span class="certificate-tag">Programming</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/certificadoJS.png" alt="Certificado JavaScript Fundamentals">
+          </div>
+          <div class="certificate-content">
+            <h3>JavaScript Fundamentals</h3>
+            <p>Lógica de programação aplicada ao desenvolvimento web e manipulação de funcionalidades com JavaScript.</p>
+            <span class="certificate-tag">Programming</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/power-bi-bradesco.png" alt="Certificado Introdução à Análise de Dados com Power BI">
+          </div>
+          <div class="certificate-content">
+            <h3>Introdução à Análise de Dados com Power BI</h3>
+            <p>Primeiros conceitos de análise de dados e visualização de informações utilizando Microsoft Power BI.</p>
+            <span class="certificate-tag">Data</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/ia-pesquisa-software.png" alt="Certificado IA para Pesquisa Científica e Produção de Software">
+          </div>
+          <div class="certificate-content">
+            <h3>IA para Pesquisa Científica e Produção de Software</h3>
+            <p>Evento sobre uso de Inteligência Artificial em pesquisa científica e desenvolvimento de software.</p>
+            <span class="certificate-tag">AI</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/certificadoHackathon.png" alt="Certificado Hackathon UniCesumar">
+          </div>
+          <div class="certificate-content">
+            <h3>Hackathon UniCesumar</h3>
+            <p>Evento prático de tecnologia, colaboração, resolução de problemas e construção de soluções em equipe.</p>
+            <span class="certificate-tag">Event</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/certificadoRegrasEModelosDeNegocio.png" alt="Certificado Regras e Modelos de Negócio">
+          </div>
+          <div class="certificate-content">
+            <h3>Business Rules</h3>
+            <p>Base importante para entender produto, requisitos, regras de negócio e decisões de software.</p>
+            <span class="certificate-tag">Software Engineering</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="certificate-grid certificates-secondary" id="all-certificates" aria-hidden="true">
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/certificadoHTML.png" alt="Certificado HTML Fundamentals">
+          </div>
+          <div class="certificate-content">
+            <h3>HTML Fundamentals</h3>
+            <p>Base de estrutura web e semântica para construção de páginas.</p>
+            <span class="certificate-tag">Front-end</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/certificadoCSS.png" alt="Certificado CSS Fundamentals">
+          </div>
+          <div class="certificate-content">
+            <h3>CSS Fundamentals</h3>
+            <p>Estilização, layout responsivo e organização visual.</p>
+            <span class="certificate-tag">Front-end</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/certificadoGerenciamentoDeProjetos.png" alt="Certificado Gerenciamento de Projetos">
+          </div>
+          <div class="certificate-content">
+            <h3>Project Management</h3>
+            <p>Noções de projetos, organização e trabalho orientado a entrega.</p>
+            <span class="certificate-tag">Management</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <article class="certificate-card">
+          <div class="certificate-image-wrapper">
+            <img src="certificados/fundamentos-ti-bradesco.png" alt="Certificado Fundamentos de TI: Hardware e Software">
+          </div>
+          <div class="certificate-content">
+            <h3>Fundamentos de TI: Hardware e Software</h3>
+            <p>Conceitos introdutórios sobre componentes de hardware, software e fundamentos da área de tecnologia.</p>
+            <span class="certificate-tag">IT Fundamentals</span>
+            <div class="certificate-card-actions">
+              <button class="certificate-link" type="button">Abrir certificado</button>
+            </div>
+          </div>
+        </article>
+        <!-- TODO: adicionar aqui outros certificados futuros quando existirem no projeto. -->
+      </div>
+
+      <div class="actions certificate-actions">
+        <button class="btn" type="button" id="toggle-certificates" aria-expanded="false" aria-controls="all-certificates">
+          Ver todos os certificados
+        </button>
+      </div>
+    </section>
+
+    <section id="timeline" class="section">
+      <div class="section-heading">
+        <div>
+          <h2>Journey</h2>
+          <p>Minha trajetória reúne projetos acadêmicos, estudos práticos, participação em eventos e desenvolvimento incremental de projetos para portfólio.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="year">2026</span>
+          <div>
+            <h3>Lenadi</h3>
+            <p>
+              Projeto principal de portfólio: plataforma de organização de estudos com documentação, requisitos,
+              CRUD, LocalStorage e roadmap técnico.
+            </p>
+            <div class="chips">
+              <span class="chip">Status: em andamento</span>
+            </div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span class="year">2026</span>
+          <div>
+            <h3>Iniciação Científica com IA</h3>
+            <p>
+              Participação em pesquisa sobre automação inteligente de revisões sistemáticas,
+              com estudos envolvendo IA, RAG e Google Workspace.
+            </p>
+            <div class="chips">
+              <span class="chip">Status: fase inicial</span>
+            </div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span class="year">2025/2026</span>
+          <div>
+            <h3>Hackathon, workshops e cursos</h3>
+            <p>Participação em eventos e formações complementares em tecnologia, projetos, desenvolvimento de software e regras de negócio.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's build something together?</h2>
+      <p>
+        Estou buscando uma oportunidade de estágio em desenvolvimento de software para aprender com pessoas experientes,
+        contribuir em projetos reais e crescer como futura engenheira de software.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:aninhaandrade888@gmail.com">Enviar e-mail</a>
+        <!-- TODO: adicionar o arquivo real do currículo neste caminho. -->
+        <a class="btn" href="CurrículoAnaClara.pdf" download>Baixar currículo</a>
+        <a class="btn" href="https://github.com/naclaragsd">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/anaclaragsd">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="certificate-modal" id="certificate-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certificate-modal-title">
+    <div class="certificate-modal-dialog" role="document">
+      <div class="certificate-modal-header">
+        <h3 class="certificate-modal-title" id="certificate-modal-title">Certificado</h3>
+        <button class="certificate-modal-close" type="button" aria-label="Fechar visualização do certificado">×</button>
+      </div>
+      <div class="certificate-modal-body" id="certificate-modal-body"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
+
