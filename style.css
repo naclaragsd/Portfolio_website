@@ -542,6 +542,7 @@
 
     .project-card {
       overflow: hidden;
+      cursor: pointer;
       transition: transform 180ms ease, border-color 180ms ease;
     }
 
@@ -760,6 +761,7 @@
 
     .certificate-image-wrapper:focus-visible,
     .avatar-frame:focus-visible,
+    .project-card:focus-visible,
     .certificate-link:focus-visible,
     .certificate-modal-close:focus-visible {
       outline: 3px solid var(--green);

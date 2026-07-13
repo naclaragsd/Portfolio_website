@@ -5,6 +5,7 @@
     const certificateModalTitle = document.querySelector('#certificate-modal-title');
     const certificateModalClose = document.querySelector('.certificate-modal-close');
     const avatarFrame = document.querySelector('.avatar-frame');
+    const projectCards = document.querySelectorAll('.project-card[data-repo-url]');
 
     certificatesToggle?.setAttribute('aria-expanded', 'false');
     if (certificatesToggle) certificatesToggle.textContent = 'Ver todos os certificados';
@@ -118,6 +119,27 @@
         }
       });
     }
+
+    projectCards.forEach((card) => {
+      const repoUrl = card.dataset.repoUrl;
+      const title = card.querySelector('h3')?.textContent.trim() || 'projeto';
+      if (!repoUrl) return;
+
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'link');
+      card.setAttribute('aria-label', `Abrir repositório do projeto ${title}`);
+
+      card.addEventListener('click', (event) => {
+        if (event.target.closest('a, button')) return;
+        window.location.href = repoUrl;
+      });
+
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+          window.location.href = repoUrl;
+        }
+      });
+    });
 
     certificateModalClose?.addEventListener('click', closeCertificateModal);
 
