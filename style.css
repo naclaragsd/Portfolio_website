@@ -377,12 +377,14 @@
       padding: 8px;
       border-radius: 50%;
       background: conic-gradient(from 20deg, var(--purple), var(--pink), var(--green), var(--purple));
+      cursor: pointer;
     }
 
     .avatar-frame img {
       width: 102px;
       height: 102px;
       object-fit: cover;
+      object-position: center;
       border-radius: 50%;
       background: #fff;
       border: 6px solid #17101f;
@@ -757,6 +759,7 @@
     }
 
     .certificate-image-wrapper:focus-visible,
+    .avatar-frame:focus-visible,
     .certificate-link:focus-visible,
     .certificate-modal-close:focus-visible {
       outline: 3px solid var(--green);
@@ -779,7 +782,7 @@
     }
 
     .certificates-secondary.is-visible {
-      max-height: 1300px;
+      max-height: 2200px;
       margin-top: 18px;
       opacity: 1;
       pointer-events: auto;
@@ -893,6 +896,12 @@
       display: block;
       border-radius: 14px;
       background: #050407;
+    }
+
+    .profile-modal-image {
+      width: auto;
+      max-width: min(520px, 84vw);
+      max-height: 74vh;
     }
 
     .timeline {

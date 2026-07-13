@@ -4,6 +4,7 @@
     const certificateModalBody = document.querySelector('#certificate-modal-body');
     const certificateModalTitle = document.querySelector('#certificate-modal-title');
     const certificateModalClose = document.querySelector('.certificate-modal-close');
+    const avatarFrame = document.querySelector('.avatar-frame');
 
     certificatesToggle?.setAttribute('aria-expanded', 'false');
     if (certificatesToggle) certificatesToggle.textContent = 'Ver todos os certificados';
@@ -55,6 +56,25 @@
       certificateModalClose?.focus();
     }
 
+    function openProfilePhotoModal() {
+      const image = avatarFrame?.querySelector('img');
+      if (!image || !certificateModal || !certificateModalBody || !certificateModalTitle) return;
+
+      certificateModalTitle.textContent = 'Foto de Ana Clara';
+      certificateModalBody.innerHTML = '';
+
+      const img = document.createElement('img');
+      img.className = 'certificate-modal-image profile-modal-image';
+      img.src = image.getAttribute('src');
+      img.alt = image.getAttribute('alt') || 'Foto de Ana Clara';
+      certificateModalBody.appendChild(img);
+
+      certificateModal.classList.add('is-open');
+      certificateModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      certificateModalClose?.focus();
+    }
+
     function closeCertificateModal() {
       if (!certificateModal || !certificateModalBody) return;
 
@@ -85,6 +105,19 @@
         openCertificateModal(card);
       });
     });
+
+    if (avatarFrame) {
+      avatarFrame.setAttribute('tabindex', '0');
+      avatarFrame.setAttribute('role', 'button');
+      avatarFrame.setAttribute('aria-label', 'Ampliar foto de Ana Clara');
+      avatarFrame.addEventListener('click', openProfilePhotoModal);
+      avatarFrame.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openProfilePhotoModal();
+        }
+      });
+    }
 
     certificateModalClose?.addEventListener('click', closeCertificateModal);
 
